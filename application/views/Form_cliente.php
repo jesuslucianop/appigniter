@@ -1,28 +1,19 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
-?><!DOCTYPE html>
+include("header_index.php");
+?>
+<!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 <title>Formulario para personas</title>
-<style>
-#divprincipal{
-margin:10px;
 
-
-}
-
-</style>
 </head>
 <body>
 <h1>En este formulario se Registraran Personas</h1>
+<form method="post" >
+  
+</form>
 <div id="divprincipal">
-
-
 <div class="row">
   <div class="col-sm-6">
     <div class="input-group form-group">
@@ -50,7 +41,7 @@ margin:10px;
 <?php
 
  ?>
-   <script src="<?php echo base_url();?>assets/js/archivo.js"></script>
+
 </body>
 
 </html>

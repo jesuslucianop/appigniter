@@ -1,5 +1,14 @@
 $(document).ready(function(){
+  function limpiar()
+  {
+      $("#txtnombre").val("");
+     $("#txtapellido").val("");
+     $("#txtdireccion").val("");
+     $("#txtcedula").val("");
 
+
+
+  }
 
   $("#buttonsubmit").click(function(){
     alert("entro el button");
@@ -10,15 +19,15 @@ $(document).ready(function(){
 
     //ajax
     $.ajax({
-      url:"<?php echo base_url();?>index.php/Cliente/index",
+      url:"http://localhost:82/appigniter/index.php/Cliente/agregar",
       type:'POST',
       data:{"nombre":nombre,"apellido":apellido,"direccion":direccion,"cedula":cedula},
-      succes:function(){
-alert("paso");
-
+      success:function(){
+        alert("paso");
+        limpiar();
       },error:function(){
         console.error("fallo");
-
+        limpiar();
 
 }
     })
