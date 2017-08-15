@@ -17,6 +17,9 @@ class Cliente extends CI_Controller {
     $direccion= $this->input->post('direccion');
     $cedula= $this->input->post('cedula');
 
+    $nuevo_Cliente=$this->Cliente_model->nuevo_Cliente(
+$nombre,$apellido,$direccion,$cedula
+    );
 
   }
 

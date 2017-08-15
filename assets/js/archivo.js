@@ -19,7 +19,7 @@ $(document).ready(function(){
 
     //ajax
     $.ajax({
-      url:"http://localhost:82/appigniter/index.php/Cliente/agregar",
+      url:"http://localhost/appigniter/index.php/Cliente/agregar",
       type:'POST',
       data:{"nombre":nombre,"apellido":apellido,"direccion":direccion,"cedula":cedula},
       success:function(){
