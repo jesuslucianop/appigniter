@@ -2,11 +2,17 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Cliente extends CI_Controller {
+
+  public function __construct()
+  {
+    parent::__construct();
+    $this->load->model('Cliente_model');
+
+
+  }
   public function index()
   {
-
     $this->load->helper('url');
-    $this->load->helper('form');
     $this->load->view('Form_cliente');
 
   }

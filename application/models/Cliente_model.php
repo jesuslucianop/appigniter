@@ -3,7 +3,8 @@ class Cliente_model extends CI_Model
 {
   function __construct()
   {
-    parent::__construct();
+    $this->load->database();
+  }
     function nuevo_Cliente($nombre,$apellido,$direccion,$cedula)
     {
       $data = array('nombre' => $nombre,
@@ -18,7 +19,7 @@ class Cliente_model extends CI_Model
     }
 
 
-  }
+
 
 
 
